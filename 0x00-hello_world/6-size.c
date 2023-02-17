@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - Write a program that prints the size of various types on the computer it is compiled and run on
- * retu: 0 (Sucess)
+ * main - Prints "Size of different variables with different data types"
+ * Return: Always 0 (success)
  */
 int main(void)
 {
@@ -18,3 +18,4 @@ int main(void)
 	printf("Size of a float: %lu byte(s)\n", sizeof(e));
 	return (0);
 }
+
