@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * print_rv - imprime or reverse
+ * print_rev - imprime or reverse
  *
  * @s: string
  *
  * Return: Always 0
  */
-void print_rv(char *s)
+void print_rev(char *s)
 {
 	int longi = 0;
 	int o;
