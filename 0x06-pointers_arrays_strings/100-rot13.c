@@ -1,28 +1,29 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
- * rot13 - encodes a string using rot13
- * @s: input string.
+ * rot13 - encoder rot13
+ * @s: pointer to string params
+ *
  * Return: *s
  */
-
-char *leet(char *);
+char *rot13(char *s)
 {
-	int count = 0, i;
-	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+	int i;
+	int j;
+	char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char datarot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	while (*(s + count) != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (i = 0; i < 52; i++)
+		for (j = 0; j < 52; j++)
 		{
-			if (*(s + count) == alphabet[i])
+			if (s[i] == data1[j])
 			{
-				*(s + count) = rot13[i];
+				s[i] = datarot[j];
 				break;
 			}
 		}
-		count++;
 	}
-
 	return (s);
 }
