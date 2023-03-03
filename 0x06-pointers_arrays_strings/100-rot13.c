@@ -2,10 +2,10 @@
 /**
  * rot13 - encodes a string using rot13
  * @s: input string.
- * Return: the pointer to dest.
+ * Return: *s
  */
 
-char *rot13(char *s)
+char *leet(char *);
 {
 	int count = 0, i;
 	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
