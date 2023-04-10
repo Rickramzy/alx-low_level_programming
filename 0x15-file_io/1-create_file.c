@@ -5,9 +5,11 @@
 #include "main.h"
 
 /**
- * creat_file - Append to file
+ * create_file - Append to file
+ * _strlen - Length of string
  * @filename: Path to file
  * @text_content: Content
+ *
  * Return: chars read
  */
 int create_file(const char *filename, char *text_content)
