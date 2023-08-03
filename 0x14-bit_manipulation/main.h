@@ -1,8 +1,14 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stdlib.h>
+/*
+ * File: ALX
+ * Auth: Raphael Oguejiofor
+ * Desc: Header file containing prototype for alll functions
+ * written in the 0x14-bit_manipulation directory.
+ */
 
+int _putchar(char c);
 int _putchar(char c);
 unsigned int binary_to_uint(const char *b);
 void print_binary(unsigned long int n);
