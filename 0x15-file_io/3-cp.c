@@ -39,6 +39,7 @@ void close_file(int fd)
 	if (c == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+		exit(100);
 	}
 }
 
@@ -47,7 +48,7 @@ void close_file(int fd)
  * @argc: The number of arguments supplied to the program
  * @argv: an array of pointers tothe arguments.
  *
- * Return: 0 onn success.
+ * Return: 0 on success.
  *
  * Description: if the argument is incorrect - exit code 97.
  *	iffile_from does not exist or cannot be read - exit code 98.
