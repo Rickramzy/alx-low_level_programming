@@ -96,8 +96,8 @@ int main(int argc, char *argv[])
 	} while (r > 0);
 
 	free(buffer);
-	close(from);
-	close(to);
+	close_file(from);
+	close_file(to);
 
 	return (0);
 }
