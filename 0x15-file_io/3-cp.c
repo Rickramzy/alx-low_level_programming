@@ -6,7 +6,7 @@ char *create_buffer(char *file);
 void close_file(int fd);
 
 /**
- * creae_buffer - alloctes 1024 bytes for a buffer
+ * create_buffer - alloctes 1024 bytes for a buffer
  * @file: The name of the file the buffer is storing
  *
  * Return: A pointer of the new allocated buffer
@@ -27,10 +27,10 @@ char *create_buffer(char *file)
 }
 
 /**
- * clsoe_file - Closes file descriptors
+ * close_file - Closes file descriptors
  * @fd: The file descriptor to be closed
  */
-void clsoe_file(int fd)
+void close_file(int fd)
 {
 	int c;
 
